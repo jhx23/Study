@@ -4,7 +4,7 @@ public class M1Method {
     private double length;
     private double width;
 
-    public M1Method(double length, double width) {  // 클래스 이름과 동일하게 수정
+    public M1Method(double length, double width) {
         this.length = length;
         this.width = width;
     }
