@@ -1,59 +1,60 @@
 package Mission.Middle;
 
 // 도형 인터페이스 작성하기
-interface Shape {
-    double calculateArea();
+
+interface Shapee {
+    double getAreae();
 }
 
-class Circle implements Shape {
-    private double radius;
+class Circlee implements Shapee {
+    private double radiuse;
 
-    public Circle(double radius) {
-        this.radius = radius;
+    public Circlee(double radiuse) {
+        this.radiuse = radiuse;
     }
 
     @Override
-    public double calculateArea() {
-        return Math.PI * radius * radius;
+    public double getAreae() {
+        return Math.PI * radiuse * radiuse;
     }
 }
 
-class Rectangle implements Shape {
-    private double width, height;
+class Rectanglee implements Shapee {
+    private double widthe, heighte;
 
-    public Rectangle(double width, double height) {
-        this.width = width;
-        this.height = height;
+    public Rectanglee(double widthe, double heighte) {
+        this.widthe = widthe;
+        this.heighte = heighte;
     }
 
     @Override
-    public double calculateArea() {
-        return width * height;
+    public double getAreae() {
+        return widthe * heighte;
     }
 }
 
-class Triangle implements Shape {
-    private double base, height;
+class Trianglee implements Shapee {
+    private double basee, heighte;
 
-    public Triangle(double base, double height) {
-        this.base = base;
-        this.height = height;
+    public Trianglee(double basee, double heighte) {
+        this.basee = basee;
+        this.heighte = heighte;
     }
 
     @Override
-    public double calculateArea() {
-        return 0.5 * base * height;
+    public double getAreae() {
+        return 0.5 * basee * heighte;
     }
 }
 
 public class M4 {
     public static void main(String[] args) {
-        Shape circle = new Circle(5);
-        Shape rectangle = new Rectangle(4, 6);
-        Shape triangle = new Triangle(3, 7);
+        Shapee circlee = new Circlee(5);
+        Shapee rectanglee = new Rectanglee(4, 6);
+        Shapee trianglee = new Trianglee(3, 8);
 
-        System.out.println("원의 면적: " + circle.calculateArea());
-        System.out.println("사각형의 면적: " + rectangle.calculateArea());
-        System.out.println("삼각형의 면적: " + triangle.calculateArea());
+        System.out.println("Circlee Areae: " + circlee.getAreae());
+        System.out.println("Rectanglee Areae: " + rectanglee.getAreae());
+        System.out.println("Trianglee Areae: " + trianglee.getAreae());
     }
 }
